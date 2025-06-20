@@ -11,7 +11,7 @@ def set_auth_cookie(response: Response, token: str) -> None:
         value=token,
         httponly=True,  # Prevents JavaScript access
         secure=True,    # Only sent over HTTPS
-        samesite="lax",  # Protects against CSRF
+        samesite="none",  # Protects against CSRF
         expires=expires.timestamp(),
         path="/"        # Cookie is valid for all paths
     )
@@ -23,6 +23,6 @@ def delete_auth_cookie(response: Response) -> None:
         key="access_token",
         httponly=True,
         secure=True,
-        samesite="lax",
+        samesite="none",
         path="/"
     )

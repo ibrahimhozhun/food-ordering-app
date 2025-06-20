@@ -2,7 +2,9 @@ import { getApiUrl } from "@/utils/api";
 import useSWR from "swr";
 
 const fetcher = async (url: string) => {
-	const response = await fetch(getApiUrl(url));
+	const response = await fetch(getApiUrl(url), {
+		credentials: "include",
+	});
 	if (!response.ok) {
 		throw new Error("An error occurred while fetching the data.");
 	}
