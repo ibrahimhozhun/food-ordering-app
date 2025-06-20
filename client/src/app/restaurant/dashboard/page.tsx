@@ -53,7 +53,10 @@ function RestaurantDashboard() {
 	// Fetch all restaurant data, which includes the list of orders.
 	const { data, error, isLoading } = useSWR<RestaurantData>(
 		swrKey,
-		authenticatedFetcher
+		authenticatedFetcher,
+		{
+			refreshInterval: 3000, // Refresh every 3 seconds
+		}
 	);
 
 	// useMemo is used to prevent re-calculating the active orders on every render.
