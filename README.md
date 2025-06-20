@@ -107,6 +107,25 @@ The frontend application will now be available at `http://localhost:3000`. Open 
 
 ---
 
+## Live Demo & Credentials
+
+You can access the live version of the application here:
+**[food-ordering-app-mocha-nine.vercel.app](https://food-ordering-app-mocha-nine.vercel.app/)**
+
+Use the following credentials to explore the app:
+
+### Customer Account
+
+-   **Email:** `customer@example.com`
+-   **Password:** `password123`
+
+### Restaurant Account
+
+-   **Email:** `restaurant@example.com`
+-   **Password:** `password123`
+
+---
+
 ## Future Work
 
 Given more time, the following features would be the next steps for this project:
