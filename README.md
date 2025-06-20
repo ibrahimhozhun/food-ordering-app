@@ -117,12 +117,12 @@ Use the following credentials to explore the app:
 ### Customer Account
 
 -   **Email:** `customer@example.com`
--   **Password:** `password123`
+-   **Password:** `Password-123`
 
 ### Restaurant Account
 
 -   **Email:** `restaurant@example.com`
--   **Password:** `password123`
+-   **Password:** `Password-123`
 
 ---
 
