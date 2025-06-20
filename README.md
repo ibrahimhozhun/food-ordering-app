@@ -76,13 +76,10 @@ copy .env.example .env
 cp .env.example .env
 
 # 4. Install the required Python dependencies
-# Note: You may need to generate this file first using `pip freeze > requirements.txt`
-# from your working environment.
 pip install -r requirements.txt
 
-# 5. From the *root* project directory, start the backend server
-cd ..
-uvicorn server.main:app --reload
+# 5. Start the backend server
+fastapi dev main.py
 ```
 
 The backend API will now be running at `http://localhost:8000`.
