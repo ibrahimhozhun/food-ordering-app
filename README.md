@@ -78,7 +78,7 @@ cp .env.example .env
 # 4. Install the required Python dependencies
 # Note: You may need to generate this file first using `pip freeze > requirements.txt`
 # from your working environment.
-pip install fastapi "uvicorn[standard]" sqlmodel pydantic-settings python-jose[cryptography] passlib[bcrypt] python-multipart
+pip install -r requirements.txt
 
 # 5. From the *root* project directory, start the backend server
 cd ..
